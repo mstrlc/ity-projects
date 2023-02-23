@@ -1,3 +1,8 @@
+# @file Makefile
+# @brief FIT VUT -- ITY -- project 1
+# @author Matyas Strelec <xstrel03@stud.fit.vutbr.cz>
+# @date 2023-02-22
+
 PROJ=1
 PROJNAME=proj$(PROJ)
 
