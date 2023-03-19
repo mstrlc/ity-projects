@@ -16,14 +16,15 @@
 
 \begin{titlepage}
 	\begin{center}
-		
+		% Namisto odradkovani 0.4 em a 0.5 em jsem pouzil pro obe odradkovani 0.1em,
+		% ktere se vzoru nejvice blizi.
 		\textsc{
-			\Huge{Vysoké učení technické v~Brně\\[0.4em]}
-			\huge{Fakulta informačních technologií}\\
+			\Huge{Vysoké učení technické v~Brně}\\[0.1em]
+			\huge{Fakulta informačních technologií\\}
 		}
 		\vspace{\stretch{0.382}}
 		\LARGE{
-			Typografie a~publikování\,{}--\,{}2.\ projekt\\[0.5em]
+			Typografie a~publikování\,{}--\,{}2.\ projekt\\[0.1em]
 			Sazba dokumentů a~matematických výrazů\\
 		}
 		\vspace{\stretch{0.618}}
@@ -50,13 +51,11 @@ patří nezlomitelná mezera. Pro zvýrazňování textu jsou zde několikrát p
 
 Na titulní straně je použito prostředí \verb|titlepage| a~sázení nadpisu podle optického středu s~využitím \emph{přesného}
 zlatého řezu. Tento postup byl probírán na přednášce. Dále jsou na titulní straně použity čtyři různé velikosti písma a~mezi
-dvojicemi řádků textu je použito odřádkování se zadanou relativní velikostí 0,5\,em a~0,4\,em\footnotemark{}.
-
-\footnotetext{Nezapomeňte použít správný typ mezery mezi číslem a~jednotkou.}
+dvojicemi řádků textu je použito odřádkování se zadanou relativní velikostí 0,5\,em a~0,4\,em\footnote{Nezapomeňte použít správný typ mezery mezi číslem a~jednotkou.}.
 
 \section{Matematický text}
-V~této sekci se podíváme na sázení matematických symbolů a~výrazů v~plynulém textu pomocí prostředí \verb|math|. Definice
-a~věty sázíme pomocí příkazu \verb|\newtheorem| s~využitím balíku \verb|amsthm|. Někdy je vhodné použít konstrukci \verb|${}$|
+V~této sekci se podíváme na sázení matematických symbolů a~výrazů v~plynulém textu pomocí prostředí \verb|math|. 
+Definice a~věty sázíme pomocí příkazu \verb|\newtheorem| s~využitím balíku \verb|amsthm|. Někdy je vhodné použít konstrukci \verb|${}$|
 nebo \verb|\mbox{}|, která říká, že (matematický) text nemá být zalomen.
 
 \newtheorem{definition}{Definice}
@@ -82,7 +81,7 @@ vnitřního řízení, $w$ je dosud nezpracovaná část vstupního řetězce a~
 \begin{definition}
 	\label{def_2}
 	\emph{Řetězec $w$ nad abecedou $\Sigma$ je přijat ZA $A$}~jestliže $(q_0, w, Z_0) \overset{*}{\underset{A}{\vdash}} (q_F, \epsilon, \gamma)$
-	pro nějaké $\gamma \in \Gamma^*$ a~$q_F \in F$. Množina $L(A) = \{w \ \vert \ w \text{ je přijat ZA }A\} \subseteq \Sigma^*$ je \emph{jazyk přijímaný ZA} $A$.
+	pro nějaké $\gamma \in \Gamma^*$ a~$q_F \in F$. Množina $L(A) = \{w \mid w \text{ je přijat ZA }A\} \subseteq \Sigma^*$ je \emph{jazyk přijímaný ZA} $A$.
 \end{definition}
 
 \newtheorem{theorem}{Věta}
@@ -140,7 +139,7 @@ $$
 $$
 
 $$
-\mathbb{X}=\mathbf{Y}\iff\bigg[
+\mathbb{X}=\mathbf{Y}\Longleftrightarrow\bigg[
 	\begin{array}{c c c}
 		\phantom{} & \Omega+\Delta & \hat{\psi} \\
 		\vec{\pi}  & \omega        & \phantom{} \\
